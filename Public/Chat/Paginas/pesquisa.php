@@ -2,7 +2,6 @@
 include("../../Class/Conexao.php");
 $pdo = conectar();
 session_start();
-if (isset($_SESSION['usuCon'])) unset($_SESSION['usuCon']);
 ?>
 
 <!DOCTYPE html>

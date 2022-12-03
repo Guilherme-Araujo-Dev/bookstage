@@ -1,6 +1,7 @@
 <?php
 include_once("../../Class/conexao.php");
 $conn = conectar();
+session_start();
 ?>
 
 <div id="content">
@@ -15,17 +16,17 @@ $conn = conectar();
         // $nome    = $row['nome'];
         // $usuario = $row['usuario'];
         // $foto    = $row['foto'];
-
+        
         $sql = 'SELECT * FROM mensagens WHERE (id_de = ? AND id_para = ?) OR (id_para = ? AND id_de = ?)';
         $stmt = $conn->prepare($sql);
         $stmt->bindParam(1,  $_SESSION['idusuario']);
         $stmt->bindParam(2,  $_SESSION['usuCon']);
         $stmt->bindParam(3,  $_SESSION['idusuario']);
         $stmt->bindParam(4,  $_SESSION['usuCon']);
-
+        
         $stmt->execute();
         $men = $stmt->fetchAll();
-
+        
         foreach ($men as $m) {
     ?>
             <table>
