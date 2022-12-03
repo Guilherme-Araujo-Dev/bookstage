@@ -96,10 +96,15 @@ $conn = conectar();
                     }
                 }
             } ?>
-            <?php include("usuarios.php") ?>
+            <div id="chatBox">
+                <?php include("usuarios.php") ?>
+            </div>
             <br><br>
         </div>
     </main>
+
+
+
 
     <footer class="rodape">
         <div>
@@ -126,6 +131,16 @@ $conn = conectar();
         });
         $(".btn").click(function() {
             $(".menu").hide();
+        });
+
+        $(function() {
+            setTime();
+
+            function setTime() {
+                var conteudo = load("usuarios.php")
+                setInterval(setTime, 1000);
+                $('#chatBox').html(conteudo);
+            }
         });
     </script>
 </body>
