@@ -48,11 +48,10 @@ $i = 1;
                             <!-- <td><img src="<?php echo $foto; ?>" class="foto-user"></td> -->
                             <?php 
                             if($m['id_de'] == $_SESSION['idusuario']) { ?>
-                                <td> <b>Eu:</b> <?php echo $m['mensagem']; ?></td>
+                                <td> <b>Você:</b> <?php echo $m['mensagem']; ?></td>
                                 <?php } else {?>
                                 <td><b><?php echo $_SESSION['nomeUsuCon'] . ":</b> " . $m['mensagem']; ?></td>
                                 <?php }
-
                             ?>
                         </tr>
                     </table>
