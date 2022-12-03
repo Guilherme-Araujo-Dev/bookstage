@@ -28,12 +28,12 @@
                         <option class="option14" value="../Generos/horror.php">Horror</option>
                     </select>
                 </a></li>
-            <li><a href="favoritos.php">Favoritos</a></li>
-            <li><a href="ja li.php">Ja li</a></li>
-            <li><a href="queroler.php">Quero ler</a></li>
-            <li><a href="perfil.php">Perfil</a></li>
-            <li><a href="chat/paginas/chat.php">Chat</a></li>
-            <li><a href="chat/paginas/pesquisa.php">Pesquisar Usuários</a></li>
+            <li><a href="../Funcoes/favoritos.php">Favoritos</a></li>
+            <li><a href="../Funcoes/ja li.php">Ja li</a></li>
+            <li><a href="../Funcoes/queroler.php">Quero ler</a></li>
+            <li><a href="../Funcoes/perfil.php">Perfil</a></li>
+            <li><a href="../Chat/paginas/chat.php">Chat</a></li>
+            <li><a href="../Chat/paginas/pesquisa.php">Pesquisar Usuários</a></li>
         </ul>
     </nav>
 </header>

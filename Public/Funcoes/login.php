@@ -1,6 +1,6 @@
 <?php
 session_start();
-include_once('Class/conexao.php');
+include_once('../Class/conexao.php');
 ?>
 
 <!DOCTYPE html>
@@ -10,10 +10,10 @@ include_once('Class/conexao.php');
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="../IMG/imag/logo.jpg">
-    <link rel="stylesheet" href="../CSS/1.css">
+    <link rel="icon" href="../../IMG/imag/logo.jpg">
+    <link rel="stylesheet" href="../../CSS/1.css">
     <title>Bookstage</title>
-    <link rel="stylesheet" href="../CSS/style-login.css">
+    <link rel="stylesheet" href="../../CSS/style-login.css">
 </head>
 
 <body>

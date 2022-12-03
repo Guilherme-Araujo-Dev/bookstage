@@ -1,5 +1,5 @@
 <?php
-include("../../Conexao.php");
+include_once("../../Class/conexao.php");
 $conn = conectar();
 ?>
 <!DOCTYPE html>

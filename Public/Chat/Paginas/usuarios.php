@@ -1,5 +1,5 @@
 <?php
-include_once("../../Conexao.php");
+include_once("../../Class/Conexao.php");
 $conn = conectar();
 ?>
 <!DOCTYPE html>
@@ -48,9 +48,9 @@ $i = 1;
                             <!-- <td><img src="<?php echo $foto; ?>" class="foto-user"></td> -->
                             <?php 
                             if($m['id_de'] == $_SESSION['idusuario']) { ?>
-                                <td><b><?php echo $_SESSION['usuario'] . ": " . $m['mensagem']; ?></b></td>
+                                <td> <b>Eu:</b> <?php echo $m['mensagem']; ?></td>
                                 <?php } else {?>
-                                <td><b><?php echo $_SESSION['nomeUsuCon'] . ": " . $m['mensagem']; ?></b></td>
+                                <td><b><?php echo $_SESSION['nomeUsuCon'] . ":</b> " . $m['mensagem']; ?></td>
                                 <?php }
 
                             ?>
