@@ -38,9 +38,6 @@ $conn = conectar();
                 $stmt->execute();
                 $men = $stmt->fetchAll();
 
-
-                
-$i = 1;
                 foreach ($men as $m) {
             ?>
                     <table>
