@@ -97,7 +97,12 @@ $conn = conectar();
                 }
             } ?>
             <div id="chatBox">
-                <?php include("usuarios.php") ?>
+                <script>
+                    setInterval(function() {
+                        $('#chatBox').load("usuarios.php");
+                    }, 100)
+                    
+                </script>
             </div>
             <br><br>
         </div>
@@ -125,6 +130,7 @@ $conn = conectar();
     </footer>
 
     <script src="http://code.jquery.com/jquery-1.12.0.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.js"></script>
     <script>
         $(".bmenu").click(function() {
             $(".menu").show();
@@ -132,17 +138,10 @@ $conn = conectar();
         $(".btn").click(function() {
             $(".menu").hide();
         });
-
-        $(function() {
-            setTime();
-
-            function setTime() {
-                var conteudo = load("usuarios.php")
-                setInterval(setTime, 1000);
-                $('#chatBox').html(conteudo);
-            }
-        });
     </script>
+
+    <script src="http://code.jquery.com/jquery-1.12.0.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.js"></script>
 </body>
 
 </html>
