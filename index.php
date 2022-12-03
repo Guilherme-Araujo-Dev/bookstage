@@ -1,4 +1,4 @@
 <?php
-blabla
+header("Location: Public/index.php")
 
 ?>
