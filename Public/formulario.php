@@ -5,90 +5,13 @@
 
 <head>
     <title>Bookstage</title>
-    <link rel="stylesheet" href="../css/1.css">
-    <link rel="icon" href="../imag/logo.jpg">
+    <link rel="stylesheet" href="../CSS/1.css">
+    <link rel="icon" href="../IMG/imag/logo.jpg">
+    <link rel="stylesheet" href="../CSS/style-formulario.css">
     <title>Formulario</title>
 </head>
 
 <body>
-    <style>
-        body {
-            font-family: arial;
-            background-image: url(../imag/fundo.jpg);
-        }
-
-        .formulario {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            background-color: rgba(0, 0, 0, 0.8);
-            padding: 15px;
-            border-radius: 15px;
-            width: 35%;
-            color: white;
-        }
-
-        fieldset {
-            border: 3px solid#5b4b41;
-        }
-
-        legend {
-            border: 1px #5b4b41;
-            padding: 10px;
-            text-align: center;
-            background-color: #5b4b41;
-            border-radius: 8px;
-        }
-
-        .input {
-            position: relative;
-        }
-
-        .inputuser {
-            background: none;
-            border: none;
-            border-bottom: 1px solid white;
-            outline: none;
-            color: white;
-            font-size: 15px;
-            width: 100%;
-            letter-spacing: 2px;
-        }
-
-        .label {
-            position: absolute;
-            top: 0px;
-            left: 0px;
-            pointer-events: none;
-            transition: .5s;
-        }
-
-        .inputuser:focus~.label,
-        .inputuser:valid~.label {
-            top: -20px;
-            font-size: 12px;
-        }
-
-        #data_nascimento {
-            border: none;
-            padding: 8px;
-            border-radius: 10px;
-            outline: none;
-            font-size: 15px;
-        }
-
-        #submit {
-            background-color: #5b4b41;
-            width: 100%;
-            border: none;
-            padding: 15px;
-            color: white;
-            font-size: 15px;
-            cursor: pointer;
-            border-radius: 25px;
-        }
-    </style>
     <div class="formulario">
         <form method="POST"><br>
             <fieldset>
@@ -148,5 +71,5 @@
 </html>
 
 <?php
-include("../leitores.php");
+include("Class/leitores.php");
 ?>

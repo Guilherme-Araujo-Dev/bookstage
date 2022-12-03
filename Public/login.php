@@ -10,10 +10,10 @@ include_once('Class/conexao.php');
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="../imag/logo.jpg">
-    <link rel="stylesheet" href="../css/1.css">
+    <link rel="icon" href="../IMG/imag/logo.jpg">
+    <link rel="stylesheet" href="../CSS/1.css">
     <title>Bookstage</title>
-    <link ref="stylesheet" href="../CSS/style-login.css">
+    <link rel="stylesheet" href="../CSS/style-login.css">
 </head>
 
 <body>
@@ -35,6 +35,7 @@ include_once('Class/conexao.php');
                 </div>
                 <br><br>
                 <input type="submit" name="btnSalvar" id="submit" />
+                <p>Não possui uma conta?<u> <a href="formulario.php"> Clique aqui!</u></a></p>
             </fieldset>
         </form>
     </div>
@@ -66,14 +67,12 @@ if (isset($_POST['btnSalvar']) && !empty($_POST['nomeusu']) && !empty($_POST['se
     if ($stmt->rowCount() > 0) {
         $_SESSION['usuario'] = $usuario;
         $_SESSION['senha'] = $senha;
-        echo "<script> alert(" . $usuario . ")</script>";
-        header('Location: ../index.php');
+        header('Location: perfil.php');
     } else {
-        echo "<script> alert(" . $usuario . ")</script>";
         unset($_SESSION['usuario']);
         unset($_SESSION['senha']);
         //header('Location: login.php');
-        echo "login nâo efetuado";
+        echo "<script> alert('Usuário e/ou Senha Incorreto(s)')</script>";
     }
 }
 ?>
