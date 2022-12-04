@@ -8,10 +8,9 @@ $conn = conectar();
 <head>
     <meta name="viewpot" content="width=device-width, inicial-scale=1">
     <title>Bookstage</title>
-    <link rel="stylesheet" href="../../../css/1.css">
+    <link rel="stylesheet" href="../../../CSS/1.css">
     <link rel="icon" href="../../../IMG/imag/logo.jpg">
-    <link rel="stylesheet" href="../css/bootstrap.min.css">
-    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../CSS/style.css">
 </head>
 
 <body>
@@ -24,10 +23,10 @@ $conn = conectar();
             <br> 
             <form id="form-chat" action="" method="POST" enctype="multipart/form-data">
                 <div class="col-lg-12">
-                    <div class="input-group">
-                        <input type="text" name="mensagem" id="mensagem" placeholder="Digite sua mensagem" class="form-control">
+                    <div>
+                        <input class="digitar" type="text" name="mensagem" id="mensagem" placeholder="Digite sua mensagem" class="form-control">
                         <span class="input-group-btn">
-                            <input type="submit" value="&rang;&rang;" class="btn btn-success">
+                            <input  type="submit" value="&rang;&rang;" class="btn btn-success">
                             <input type="hidden" name="env" value="envMsg" />
                         </span>
                     </div>
