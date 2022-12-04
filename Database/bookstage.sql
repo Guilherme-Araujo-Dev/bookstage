@@ -142,7 +142,21 @@ CREATE TABLE `log_mensagens` (
 
 
 INSERT INTO `livros` (`idlivros`, `nome`, `editora`, `autor`, `generos`, `descricao`, `isbn`, `capa`) VALUES
-(1, 'A Cidade Dos Fantasmas', 'Galera ', 'Victoria Schwab\r\n', 'sobrenatural ', '', '9786555872057', 'acidadedosfantasmas'),
+(1, 'A Cidade Dos Fantasmas', 'Galera ', 'Victoria Schwab\r\n', 'sobrenatural ', 'Em A cidade dos fantasmas, uma fantasia young adult de Victoria 
+Schwab, conheça a história de Cassidy Blake. Seus pais são os conhecidos Espectores, uma famosa dupla de caça-fantasmas. No entanto, em segredo, 
+quem realmente consegue ver - e se comunicar - com os espíritos é a própria Cass. Cassidy Blake vive uma rotina simples e tranquila com seus pais
+ no subúrbio. Sua vida é perfeitamente normal - exceto pelo fato de ela conseguir se mover, através do Véu, entre o mundo dos vivos e o do mortos 
+ e por ter como melhor amigo Jacob, um fantasma. Quando seus pais são convidados por uma emissora de televisão para apresentar um programa sobre 
+ os lugares mais assustadores do mundo, seu cotidiano vira de cabeça para baixo. Em pouco tempo, estão todos - Cassidy, seus pais, seu melhor amigo 
+ fantasma e Ceifador, seu gato - em direção à superassombrada Edimburgo, na Escócia, a primeira parada do roteiro do programa... e situações fora 
+ do comum começam a acontecer. Na Escócia, Cass se vê cercada, para onde quer que olhe, por fantasmas de todos os tipos, e, é claro, nem todos são 
+ gentis e amigáveis. Em meio às incertezas sobre como deve usar seu dom, Cassidy e Jacob se deparam com a Rapina Rubra, um espírito maligno e lendário 
+ que surge a cada inverno para assombrar a população local - principalmente as crianças. Cruzando a cidade e passando pelos pontos turísticos mais 
+ célebres da região - do cemitério Greyfriars ao bar The White Hart Inn, do Beco de Mary King ao castelo de Edimburgo -, Cassidy e Jacob conhecem a 
+ fundo as fábulas, mitos e segredos da cidade, e precisam confrontar a história sangrenta e sobrenatural da capital escocesa. Ainda que em meio a 
+ uma empreitada de muitas reviravoltas, os poderes de Cassidy - além de sua bravura e coragem - a levarão a uma batalha épica e, para salvar a si 
+ mesma e aos que ama, ela precisará de um impulso e determinação finais, que se estendam tanto pelo enérgico mundo dos vivos quanto pelo sombrio 
+ mundo dos mortos. "Essa atmosférica histórica de fantasmas de Schwab arrepia e encanta enquanto desafia os leitores a enfrentar seus medos." - Publishers Weekly', '9786555872057', 'acidadedosfantasmas'),
 (2, 'A Culpa e das Estrelas', 'Intrínseca ', 'John Green \r\n', 'comedia, drama/tragedia, romance ', '', '9788580575019', 'aculpaedasestrelas'),
 (3, 'A Espada do Verão', 'Intrínseca ', 'Rick Riordan\r\n', 'fantasia, ficçao ‎ ', '', '9788580577952', 'aespadadoverao'),
 (4, 'A Garota Dinamarquesa', 'Fábrica231 ', 'David Ebershoff\r\n', 'lgbtqia+, romance ', '', '9788568432440', 'agarotadinamarquesa'),
