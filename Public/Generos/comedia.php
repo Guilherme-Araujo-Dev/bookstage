@@ -1,3 +1,14 @@
+<?php
+include_once("../Class/conexao.php");
+$pdo = conectar();
+session_start();
+
+$sql = "SELECT * FROM livros WHERE generos LIKE '%comedia%'";
+$stmt = $pdo->prepare($sql);
+$stmt->execute();
+$livros = $stmt->fetchAll();
+
+?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -13,17 +24,14 @@
                 <div id="imagens">
                     <h1 id="Comedia">Com&eacute;dia</h1>
                     <br>
-            <a href="../Livros/aculpaedasestrelas.php">
-                <img src="../../IMG/livros/aculpaedasestrelas.jpg">
+            <?php foreach($livros as $l) { ?>
+            <a href="../Livros/<?php echo $l['capa'] ?>.php">
+                <img src="../../IMG/livros/<?php echo $l['capa'] ?>.jpg">
             </a>
-            <a href="../Livros/diariodeumbanana.php">
-                <img src="../../IMG/livros/diariodeumbanana.jpg">
-            </a>
-            <a href="../Livros/ninguemviraadultodeverdade.php">
-                <img src="../../IMG/livros/ninguemviraadultodeverdade.png">
-            </a>
-                 </div>
-            </main>
+            <?php } ?>
+        </div>
+    </main>
+            
             <?php include("../Class/footer.php") ?>
 <script src="http://code.jquery.com/jquery-1.12.0.min.js"></script>
 <script>

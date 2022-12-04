@@ -1,3 +1,13 @@
+<?php
+include_once("../Class/conexao.php");
+$pdo = conectar();
+session_start();
+
+$sql = "SELECT * FROM livros WHERE genero LIKE %acao%";
+
+
+?>
+
 <!DOCTYPE html>
 <html>
 
