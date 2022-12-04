@@ -9,7 +9,7 @@ $conn = conectar();
     <meta name="viewpot" content="width=device-width, inicial-scale=1">
     <title>Bookstage</title>
     <link rel="stylesheet" href="../../../css/1.css">
-    <link rel="icon" href="../../../imag/logo.jpg">
+    <link rel="icon" href="../../../IMG/imag/logo.jpg">
     <link rel="stylesheet" href="../css/bootstrap.min.css">
     <link rel="stylesheet" href="../css/style.css">
 </head>
@@ -20,7 +20,7 @@ $conn = conectar();
             <h1 class="logo"></h1>
         </a>
         <button class="bmenu">
-            <img src="../../../imag/menu.png">
+            <img src="../../../IMG/imag/menu.png">
         </button>
         <nav class="menu">
             <a class="btn"><i>X</i></a>
@@ -115,22 +115,20 @@ $conn = conectar();
         <div>
             <h3> Siga-nos </h3>
             <a href="https://instagram.com/instagram" target="_blank">
-                <img class="icone" src="../../../imag/instagram.png">
+                <img class="icone" src="../../../IMG/imag/instagram.png">
             </a>
             <a href="https://facebook.com" target="_blank">
-                <img class="icone" src="../../../imag/facebook.png">
+                <img class="icone" src="../../../IMG/imag/facebook.png">
             </a>
             <a href="https://whatsapp.com" target="_blank">
-                <img class="icone" src="../../../imag/whatsapp.png.">
+                <img class="icone" src="../../../IMG/imag/whatsapp.png.">
             </a>
             <a href="https://twitter.com" target="_blank">
-                <img class="icone" src="../../../imag/twitter.png">
+                <img class="icone" src="../../../IMG/imag/twitter.png">
             </a>
         </div>
     </footer>
 
-    <script src="http://code.jquery.com/jquery-1.12.0.min.js"></script>
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.js"></script>
     <script>
         $(".bmenu").click(function() {
             $(".menu").show();
@@ -140,7 +138,6 @@ $conn = conectar();
         });
     </script>
 
-    <script src="http://code.jquery.com/jquery-1.12.0.min.js"></script>
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.js"></script>
 </body>
 
