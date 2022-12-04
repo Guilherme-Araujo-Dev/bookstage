@@ -27,6 +27,6 @@ $livros = $stmt->fetchAll();
     <?php include("../Class/header.php") ?>
     <main>
         <div class="conteudo">
-            Favoritos
+        <h1 id="Terror">Quero Ler</h1>
         </div>
         <?php include("../Class/funcoes.php"); ?>

@@ -27,7 +27,7 @@ $livros = $stmt->fetchAll();
     <?php include("../Class/header.php") ?>
     <main>
         <div class="conteudo">
-            Já Li
+        <h1 id="Terror">Já Li</h1>
         </div>
 
         <?php include("../Class/funcoes.php"); ?>
