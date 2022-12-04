@@ -10,7 +10,7 @@
 </head>
 
 <body>
-    <?php include("../Class/header.php") ?>
+<?php include("../Class/header.php") ?>
     <main>
         <div id="imagens">
             <h1 id="Acao"><b>A&ccedil;&atilde;o</b></h1>
@@ -26,23 +26,7 @@
             </a>
         </div>
     </main>
-    <footer class="rodape">
-        <div>
-            <h3> Siga-nos </h3>
-            <a href="https://instagram.com/instagram" target="_blank">
-                <img class="icone" src="../../imag/instagram.png">
-            </a>
-            <a href="https://facebook.com" target="_blank">
-                <img class="icone" src="../../imag/facebook.png">
-            </a>
-            <a href="https://whatsapp.com" target="_blank">
-                <img class="icone" src="../../imag/whatsapp.png.">
-            </a>
-            <a href="https://twitter.com" target="_blank">
-                <img class="icone" src="../../imag/twitter.png">
-            </a>
-        </div>
-    </footer>
+    <?php include("../Class/footer.php") ?>
     <script src="http://code.jquery.com/jquery-1.12.0.min.js"></script>
     <script>
         $(".bmenu").click(function() {

@@ -1,91 +1,40 @@
-<?php
-echo '<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
 <head>
 	<title>Bookstage</title>
     <meta charset = "UTF-8">
-    <link rel="stylesheet" href="../css/1.css">
-    <link rel="stylesheet" href="../css/2.css">
-    <link rel="icon" href="../imag/logo.jpg">
+    <link rel="stylesheet" href="../../CSS/1.css">
+    <link rel="stylesheet" href="../../CSS/2.css">
+    <link rel="icon" href="../../imag/logo.jpg">
 </head>
 <body>
-	<header class="cabecalho">
-        <a href="../index.php"><h1 class="logo"></h1></a>
-                <button class="bmenu">
-                    <img src="../imag/menu.png">
-                </button>
-                <nav class="menu"> 
-                    <a class="btn"><i>X</i></a>
-                    <ul>
-                    <li><a href="index.php">In&iacute;cio</a></li>
-                    <li class="li"><a href="#">Gen&ecirc;ro: 
-                    <select id="link" onchange="location = this.value;">
-                    <option></option>
-                    <option class="option1" value="acao.php">A&ccedil;&atilde;o</option>
-                    <option class="option2" value="aventura.php">Aventura</option>
-                    <option class="option3" value="comedia.php">Com&eacute;dia</option>
-                    <option class="option4" value="drama.php">Drama/Trag&eacute;dia</option>
-                    <option class="option5" value="fabula.php">F&aacute;bula</option>
-                    <option class="option6" value="fantasia.php">Fantasia</option>
-                    <option class="option7" value="ficcao.php">Fic&ccedil;&atilde;o</option>
-                    <option class="option8" value="lgbtqia+.php">LGBTQIA+</option>
-                    <option class="option9" value="misterio.php">Mist&eacute;rio</option>
-                    <option class="option10" value="romance.php">Rom&acirc;nce</option>
-                    <option class="option11" value="sobrenatural.php">Sobrenatural</option>
-                    <option class="option12" value="suspense.php">Suspense</option>
-                    <option class="option13" value="terror.php">Terror</option>
-                    <option class="option14" value="horror.php">Horror</option>
-                </select>
-                </a></li>
-                    <li><a href="favoritos.php">Favoritos</a></li>
-                    <li><a href="ja li.php">Ja li</a></li>
-                    <li><a href="queroler.php">Quero ler</a></li>
-                    <li><a href="perfil.php">Perfil</a></li>
-            </ul>
-            </nav>
-            </header>
+<?php include("../Class/header.php") ?>
             <main>
                 <div id="imagens">
                     <h1 id="Ficcao">Fic&ccedil;&atilde;o</h1>
                     <br>
-            <a href="livros/aespadadoverao.php">
-                <img src="livros/aespadadoverao.jpg">
+            <a href="../Livros/aespadadoverao.php">
+                <img src="../../IMG/livros/aespadadoverao.jpg">
             </a>
-            <a href="livros/bruxosebruxas.php">
-                <img src="livros/bruxosebruxas.jpg">
+            <a href="../Livros/bruxosebruxas.php">
+                <img src="../../IMG/livros/bruxosebruxas.jpg">
             </a>
-            <a href="livros/diariodeumbanana.php">
-                <img src="livros/diariodeumbanana.jpg">
+            <a href="../Livros/diariodeumbanana.php">
+                <img src="../../IMG/livros/diariodeumbanana.jpg">
             </a>
-            <a href="livros/jogosvorazes.php">
-                <img src="livros/jogosvorazes.jpg">
+            <a href="../Livros/jogosvorazes.php">
+                <img src="../../IMG/livros/jogosvorazes.jpg">
                 </a>
-                <a href="livros/oladraoderaios.php">
-                    <img src="livros/oladraoderaios.jpg">
+                <a href="../Livros/oladraoderaios.php">
+                    <img src="../../IMG/livros/oladraoderaios.jpg">
                 </a>
-                <a href="livros/pedrafilosofal.php">
-                    <img src="livros/pedrafilosofal.jpg">
+                <a href="../Livros/pedrafilosofal.php">
+                    <img src="../../IMG/livros/pedrafilosofal.jpg">
                 </a>
             </a>
                  </div>
             </main>
-       <footer class="rodape">
-        <div>
-                    <h3> Siga-nos </h3>
-                    <a  href="https://instagram.com/instagram" target="_blank">
-                            <img class="icone" src="../imag/instagram.png">
-                    </a>
-                    <a href="https://facebook.com" target="_blank">
-                        <img class="icone" src="../imag/facebook.png">
-                    </a>
-                    <a href="https://whatsapp.com" target="_blank">
-                        <img class="icone" src="../imag/whatsapp.png.">
-                        </a>
-                    <a href="https://twitter.com" target="_blank">
-                        <img class="icone" src="../imag/twitter.png">
-         </a>
-         </div>
-</footer>
+            <?php include("../Class/footer.php") ?>
 <script src="http://code.jquery.com/jquery-1.12.0.min.js"></script>
 <script>
     $(".bmenu").click(function(){
@@ -96,5 +45,4 @@ echo '<!DOCTYPE html>
     });
 </script>
 </body>
-</html>';
-?>
+</html>
