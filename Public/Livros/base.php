@@ -71,9 +71,10 @@ $stmt->bindParam(2, $_SESSION['idusuario']);
 $stmt->execute();
 
 if ($stmt->rowCount() == 0) {
+    $date = date('Y-m-d');
     $sql = "INSERT INTO livros_leitores VALUES (null, ?, 'n', 'n', 'n', ?, ?)";
     $stmt = $pdo->prepare($sql);
-    $stmt->bindParam(1, date('Y-m-d'));
+    $stmt->bindParam(1, $date);
     $stmt->bindParam(2, $id);
     $stmt->bindParam(3, $_SESSION['idusuario']);
     $stmt->execute();

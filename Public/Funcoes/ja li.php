@@ -1,32 +1,15 @@
-<!DOCTYPE html>
-<html>
+<?php
+include_once("../Class/conexao.php");
+$pdo = conectar();
+session_start();
 
-<head>
-    <title>Bookstage</title>
-    <meta charset="UTF-8">
-    <link rel="stylesheet" href="../../CSS/1.css">
-    <link rel="stylesheet" href="../../CSS/2.css">
-    <link rel="icon" href="../../IMG/imag/logo.jpg">
-</head>
+$sql = "SELECT livros_idlivros FROM livros_leitores WHERE lidos = 's' AND leitores_idleitores = ?";
+$stmt = $pdo->prepare($sql);
+$stmt->bindParam(1, $_SESSION['idusuario']);
+$stmt->execute();
 
-<body>
-    <?php include("../Class/header.php") ?>
-    <main>
-        <div class="conteudo">
-            Ja li
-        </div>
+$livros = $stmt->fetchAll();
 
-    </main>
-    <?php include("../Class/footer.php") ?>
-    <script src="http://code.jquery.com/jquery-1.12.0.min.js"></script>
-    <script>
-        $(".bmenu").click(function() {
-            $(".menu").show();
-        });
-        $(".btn").click(function() {
-            $(".menu").hide();
-        });
-    </script>
-</body>
+include("../Class/funcoes.php");
 
-</html>
+?>
