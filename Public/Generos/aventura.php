@@ -1,3 +1,14 @@
+<?php
+include_once("../Class/conexao.php");
+$pdo = conectar();
+session_start();
+
+$sql = "SELECT * FROM livros WHERE generos LIKE '%aventura%'";
+$stmt = $pdo->prepare($sql);
+$stmt->execute();
+$livros = $stmt->fetchAll();
+
+?>
 <!DOCTYPE html>
 <html>
 
@@ -13,19 +24,16 @@
     <?php include("../Class/header.php") ?>
     <main>
         <div id="imagens">
-            <h1 id="Aventura">Aventura</h1>
+            <h1 id="Comedia">Com&eacute;dia</h1>
             <br>
-            <a href="../Livros/pedrafilosofal.php">
-                <img src="../../IMG/livros/pedrafilosofal.jpg">
-            </a>
-            <a href="../Livros/jogosvorazes.php">
-                <img src="../../IMG/livros/jogosvorazes.jpg">
-            </a>
-            <a href="../Livros/oladraoderaios.php">
-                <img src="../../IMG/livros/oladraoderaios.jpg">
-            </a>
+            <?php foreach ($livros as $l) { ?>
+                <button class="btnLivros" name="btnLivros" type="submit" onclick="window.location.href = '../Livros/base.php?id=<?php echo $l['idlivros']; ?>'">
+                    <img src="../../IMG/livros/<?php echo $l['capa']; ?>.jpg">
+                </button>
+            <?php } ?>
         </div>
     </main>
+
     <?php include("../Class/footer.php") ?>
     <script src="http://code.jquery.com/jquery-1.12.0.min.js"></script>
     <script>
@@ -39,3 +47,10 @@
 </body>
 
 </html>
+
+<?php
+if (isset($_POST['btnLivros'])) {
+    $_SESSION['livro'] = $_POST['btnLivros'];
+    /*onclick="window.location.href = '../Livros/<?php echo $l['capa']; ?>.php "*/
+}
+?>
