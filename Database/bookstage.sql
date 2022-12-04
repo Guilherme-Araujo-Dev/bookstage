@@ -67,10 +67,10 @@ CREATE TABLE `leitores` (
   `usuario` varchar(200) NOT NULL,
   `data_nasc` date NOT NULL,
   `telefone` bigint(11) ZEROFILL NOT NULL,
-  `email` varchar(30) NOT NULL,
+  `email` varchar(100) NOT NULL,
   `senha` varchar(32) NOT NULL,
   `sexo` varchar(1) NOT NULL,
-  `foto` varchar(255) NOT NULL
+  `foto` varchar(255)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 -- --------------------------------------------------------
@@ -168,17 +168,12 @@ INSERT INTO `livros` (`idlivros`, `nome`, `editora`, `autor`, `generos`, `descri
 (24, 'O Vilarejo', 'Suma ', 'Raphael Montes\r\n', 'horror  ', '', '9788581053042', 'ovilarejo'),
 (25, 'Vermelho Branco e Sangue Azul', 'Seguinte ', 'CASEY MCQUISTON\r\n', 'lgbtqia+, romance ', '', '9788555340949', 'vermelhobrancoesangueazul');
 
---
--- Índices para tabelas despejadas
---
+INSERT INTO leitores (nome, usuario, data_nasc, telefone, email, senha, sexo) VALUES ("Juliany Fites dos Santos", "Jubaba", "2004-04-18", "45998369261", "santos.juliany@escola.pr.gov.br", md5("12345678"), "F");
+INSERT INTO leitores (nome, usuario, data_nasc, telefone, email, senha, sexo) VALUES ("Mariana Balem Fonseca", "Merlin", "2004-01-04", "45984028366", "mariana.fonseca@escola.pr.gov.br", md5("87654321"), "O");
+INSERT INTO leitores (nome, usuario, data_nasc, telefone, email, senha, sexo) VALUES ("Guilherme Araújo Pereira", "Aleatorio", "2004-04-18", "45998305347", "guilherme.araujo.pereira@escola.pr.gov.br", md5("batata123"), "M");
+INSERT INTO leitores (nome, usuario, data_nasc, telefone, email, senha, sexo) VALUES ("Angelica Celeste Del Pozo Pescador", "Angel", "2004-06-17", "45998312296", "angelica.pescador@escola.pr.gov.br", md5("********"), "F");
 
--
---
--- AUTO_INCREMENT de tabelas despejadas
---
 
---
--- AUTO_INCREMENT de tabela `leitores`
 -
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

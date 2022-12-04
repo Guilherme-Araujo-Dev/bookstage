@@ -36,7 +36,7 @@
                 <br>
                 <br>
                 <div class="input">
-                    <input type="text" name="email" id="email" class="inputuser" required="required" maxlength="30" />
+                    <input type="text" name="email" id="email" class="inputuser" required="required" maxlength="100" />
                     <label for="email" class="label"> Email</label>
                 </div>
                 <br>
