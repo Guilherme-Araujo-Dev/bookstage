@@ -5,16 +5,16 @@ echo '<!DOCTYPE html>
     <meta name="viewpot" content="width=device-width, inicial-scale=1">
     <meta charset = "UTF-8">
 	<title>Bookstage</title>
-    <link rel="stylesheet" href="../../css/1.css">
-    <link rel="stylesheet" href="../../css/2.css">
-    <link rel="stylesheet" href="../../css/3.css">
-    <link rel="icon" href="../../imag/logo.jpg">
+    <link rel="stylesheet" href="../../CSS/1.css">
+    <link rel="stylesheet" href="../../CSS/2.css">
+    <link rel="stylesheet" href="../../CSS/3.css">
+    <link rel="icon" href="../../IMG/imag/logo.jpg">
 </head>
 <body>
 	<header class="cabecalho">
     <a href="../../index.php"><h1 class="logo"></h1></a>
             <button class="bmenu">
-                <img src="../../imag/menu.png">
+                <img src="../../IMG/imag/menu.png">
             </button>
             <nav class="menu"> 
                 <a class="btn"><i>X</i></a>
@@ -59,6 +59,9 @@ echo '<!DOCTYPE html>
             <div id="imagem" class="borda">
             <img src="jogosvorazes.jpg">
             </div>
+            <button class="button">F</button>
+            <button class="button">Q</button>
+            <button class="button">j</button>
         </main>
         <footer class="rodape">
                 <div>
