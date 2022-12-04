@@ -5,9 +5,9 @@
 
 <head>
     <title>Bookstage</title>
-    <link rel="stylesheet" href="../CSS/1.css">
+    <link rel="stylesheet" href="../../CSS/1.css">
     <link rel="icon" href="../IMG/imag/logo.jpg">
-    <link rel="stylesheet" href="../CSS/style-formulario.css">
+    <link rel="stylesheet" href="../../CSS/style-formulario.css">
     <title>Formulario</title>
 </head>
 
