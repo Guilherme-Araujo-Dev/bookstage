@@ -37,7 +37,7 @@ session_start();
             </form>
             <?php
             if (!isset($_SESSION['idusuario'])) {
-                echo "<meta http-equiv='refresh' content='0; URL=../../Funcoes/login.php'/>";
+                echo "<meta http-equiv='refresh' content='0; URL=../../Home/login.php'/>";
             }
 
             if (isset($_POST['env']) && $_POST['env'] == "envMsg") {

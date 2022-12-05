@@ -1,4 +1,4 @@
 <?php
-header("Location: Public/Funcoes/login.php")
+header("Location: Public/Home/login.php")
 
 ?>
