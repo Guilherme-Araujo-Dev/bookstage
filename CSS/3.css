@@ -20,16 +20,14 @@ div#imagem img {
     background-color: black;
     }
 
-    div#imagem1 img {
-        float: left;
-        margin: 0 10px 10px 0;
-        padding: 2% 3%;
-        max-width: 300px;
-        height: 320px;
-        border-radius: 15%;
-        border-style: solid;
-        background-color: black;
-        }
+    
+div#imagem1 img {
+    float: left;
+    margin: 0 10px 10px 0;
+    padding: 2% 3%;
+    width: 30%;
+    height: 30%;
+    }
     
 .borda{
     margin-left: 10%;
@@ -37,14 +35,6 @@ div#imagem img {
     left: 45px;
     width: 400px;
     height: 420px;
-}
-
-.borda1{
-    margin-left: 10%;
-    top: 20px;
-    left: 45px;
-    width: 300px;
-    height: 320px;
 }
 
 .sinopse {

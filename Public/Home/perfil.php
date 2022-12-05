@@ -20,6 +20,7 @@ session_start();
     <?php include("../Class/header.php") ?>
     <main>
         <h5 class="titulo">Bem vindo</h5>
+        <br>
         <div class="sinopse">
             <h5>Nome de usuario</h5>
             <br>
@@ -30,8 +31,8 @@ session_start();
             <h5>Fone</h5>
             <br>
         </div>
-        <div id="imagem1" class="borda1">
-            <img src="../../IMG/Fotosperfil/user1.png">
+        <div id="imagem1" class="borda">
+            <img src="../../IMG/fotosPerfil/user1.png">
         </div>
     </main>
     <?php include("../Class/footer.php") ?>
