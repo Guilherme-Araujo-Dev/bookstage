@@ -20,6 +20,7 @@ $livros = $stmt->fetchAll();
     <meta charset="UTF-8">
     <link rel="stylesheet" href="../../CSS/1.css">
     <link rel="stylesheet" href="../../CSS/2.css">
+    <link rel="stylesheet" href="../../CSS/3.css">
     <link rel="icon" href="../../IMG/imag/logo.jpg">
     <script src="../../JS/button.js"></script>
 </head>
