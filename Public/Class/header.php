@@ -13,7 +13,7 @@
         <a class="btn1">
             <h4 style="font-style: normal">X</h4>
         </a>
-        <ul>
+        <ul class="tela">
             <li><a href="../Funcoes/index.php">In&iacute;cio</a></li>
             <li class="li"><a href="#">Gen&ecirc;ro:
                     <select id="link" onchange="location = this.value;">
