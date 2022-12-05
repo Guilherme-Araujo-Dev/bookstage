@@ -6,9 +6,12 @@
                 $stmt->bindParam(1, $l['livros_idlivros']);
                 $stmt->execute();
 
-                $livro = $stmt->fetch(); ?>
+                $livro = $stmt->fetch();
+                ?>
 
-                <img src="../../IMG/livros/<?php echo $livro['capa']; ?>.jpg">
+                <button class="btnLivros" name="btnLivros" type="submit" onclick="window.location.href = '../Livros/base.php?id=<?php echo $livro['idlivros']; ?>'">
+                    <img src="../../IMG/livros/<?php echo $livro['capa']; ?>.jpg">
+                </button>
 
 
             <?php } ?>

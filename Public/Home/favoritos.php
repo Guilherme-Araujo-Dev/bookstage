@@ -3,7 +3,7 @@ include_once("../Class/conexao.php");
 $pdo = conectar();
 session_start();
 
-$sql = "SELECT livros_idlivros FROM livros_leitores WHERE favoritos = 's' AND leitores_idleitores = ?";
+$sql = "SELECT * FROM livros_leitores WHERE favoritos = 's' AND leitores_idleitores = ?";
 $stmt = $pdo->prepare($sql);
 $stmt->bindParam(1, $_SESSION['idusuario']);
 $stmt->execute();
@@ -31,3 +31,9 @@ $livros = $stmt->fetchAll();
             <h5 id="Terror">Favoritos</h5>
         </div>
         <?php include("../Class/funcoes.php"); ?>
+
+<?php
+if (isset($_POST['btnLivros'])) {
+    $_SESSION['livro'] = $_POST['btnLivros'];
+}
+?>
