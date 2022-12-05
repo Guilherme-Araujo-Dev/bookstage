@@ -14,6 +14,7 @@ include_once('../Class/conexao.php');
     <link rel="stylesheet" href="../../CSS/1.css">
     <title>Bookstage</title>
     <link rel="stylesheet" href="../../CSS/style-login.css">
+    <script src="../../JS/button.js"></script>
 </head>
 
 <body>

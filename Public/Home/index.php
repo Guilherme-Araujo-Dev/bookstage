@@ -44,15 +44,7 @@ session_start();
     </main>
     */
     include("../Class/footer.php"); ?>
-    <script>
-        
-        $("bmenu").click(function() {
-            $(".menu").show();
-        });
-        $(".btn1").click(function() {
-            $(".menu").hide();
-        });
-    </script>
+    <script src="../../JS/button.js"></script>
 </body>
 
 </html>

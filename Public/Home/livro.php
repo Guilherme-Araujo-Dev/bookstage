@@ -19,6 +19,7 @@ $livros = $stmt->fetchAll();
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="css/style-livro.css">
+    <script src="../../JS/button.js"></script>
     <title>Livros</title>
 </head>
 <body>

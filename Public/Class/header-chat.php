@@ -41,5 +41,4 @@
             <li><a href="../../Chat/paginas/pesquisa.php">Pesquisar Usuários</a></li>
         </ul>
     </nav>
-    <script src="../../../JS/button.js"></script>
 </header>
