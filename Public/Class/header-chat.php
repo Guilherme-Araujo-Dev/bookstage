@@ -14,7 +14,7 @@
             <h4 style="font-style: normal">X</h4>
         </a>
         <ul>
-            <li><a href="../../Home/index.php">In&iacute;cio</a></li>
+        <li><a href="../../Home/index.php">In&iacute;cio</a></li>
             <li class="li"><a href="#">Gen&ecirc;ro:
                     <select id="link" onchange="location = this.value;">
                         <option></option>
