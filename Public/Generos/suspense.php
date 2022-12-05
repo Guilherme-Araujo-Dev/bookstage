@@ -40,7 +40,7 @@ $livros = $stmt->fetchAll();
         $(".bmenu").click(function() {
             $(".menu").show();
         });
-        $(".btn").click(function() {
+        $(".btn1").click(function() {
             $(".menu").hide();
         });
     </script>
