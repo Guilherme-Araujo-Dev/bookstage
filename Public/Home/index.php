@@ -44,7 +44,6 @@ session_start();
     </main>
     */
     include("../Class/footer.php"); ?>
-    <script src="../../JS/button.js"></script>
 </body>
 
 </html>

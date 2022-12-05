@@ -18,7 +18,7 @@
     </main>
     <?php include("../Class/footer.php") ?>
     <script src="http://code.jquery.com/jquery-1.12.0.min.js"></script>
-    <script src="../../JS/button.js"></script>
+
 </body>
 
 </html>
