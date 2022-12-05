@@ -44,6 +44,5 @@ $livros = $stmt->fetchAll();
 <?php
 if (isset($_POST['btnLivros'])) {
     $_SESSION['livro'] = $_POST['btnLivros'];
-    /*onclick="window.location.href = '../Livros/<?php echo $l['capa']; ?>.php "*/
 }
 ?>
