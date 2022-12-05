@@ -1,3 +1,8 @@
+<?php
+include("../Class/Conexao.php");
+$pdo = conectar();
+session_start();
+?>
 <!DOCTYPE html>
 <html>
 
@@ -12,10 +17,8 @@
 <body>
     <?php include("../Class/header.php") ?>
     <main>
-        <div class="conteudo">
-            Perfil
-        </div>
-
+    <h5>Bem vindo</h5>
+    <img src>
     </main>
     <?php include("../Class/footer.php") ?>
     <script src="http://code.jquery.com/jquery-1.12.0.min.js"></script>
