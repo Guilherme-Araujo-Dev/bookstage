@@ -66,10 +66,11 @@ main{
 }
 .btn{
     font-size: 1.5em;
-    color: white;
     float: right;
     cursor: pointer;
     margin: 2% 3% 0 0;
+    width: 60px;
+    height: 56px;
 }
 
 .menu ul {
