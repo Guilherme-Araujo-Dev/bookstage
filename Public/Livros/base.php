@@ -31,7 +31,7 @@ $livro = $stmt->fetch();
 <body>
     <?php include("../Class/header.php"); ?>
     <main>
-        <h1 class="titulo"><?php echo $livro['nome']; ?></h1>
+        <h5 class="titulo"><?php echo $livro['nome']; ?></h5>
         <br><br>
         <div class="sinopse">
             <p>

@@ -24,7 +24,7 @@ $livros = $stmt->fetchAll();
     <?php include("../Class/header.php") ?>
     <main>
         <div id="imagens">
-            <h1 id="Suspense">Suspense</h1>
+            <h5 id="Suspense">Suspense</h5>
             <br>
             <?php foreach ($livros as $l) { ?>
                 <button class="btnLivros" name="btnLivros" type="submit" onclick="window.location.href = '../Livros/base.php?id=<?php echo $l['idlivros']; ?>'">
