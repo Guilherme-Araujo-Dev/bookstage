@@ -17,7 +17,7 @@ $livros = $stmt->fetchAll();
     <meta charset="UTF-8">
     <link rel="stylesheet" href="../../CSS/1.css">
     <link rel="stylesheet" href="../../CSS/2.css">
-    <link rel="icon" href="../../imag/logo.jpg">
+    <link rel="icon" href="../../IMG/imag/logo.jpg">
 </head>
 
 <body>
