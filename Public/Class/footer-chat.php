@@ -1,6 +1,6 @@
 <footer class="rodape">
     <div>
-        <h3> Siga-nos </h3>
+        <h4> Siga-nos </h4>
         <a href="https://instagram.com/instagram" target="_blank">
             <img class="icone" src="../../../IMG/imag/instagram.png">
         </a>

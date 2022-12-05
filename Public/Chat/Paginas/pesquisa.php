@@ -10,11 +10,10 @@ session_start();
 <head>
     <title>Bookstage</title>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="../../chat/css/bootstrap.min.css">
-    <link rel="stylesheet" href="../../../css/1.css">
-    <link rel="stylesheet" href="../../../css/2.css">
-    <link rel="stylesheet" href="../../../css/pesquisa.css">
-    <link rel="icon" href="../../../imag/logo.jpg">
+    <link rel="stylesheet" href="../CSS/bootstrap.min.css">
+    <link rel="stylesheet" href="../../../CSS/1.css">
+    <link rel="stylesheet" href="../../../CSS/2.css">
+    <link rel="icon" href="../../../IMG/imag/logo.jpg">
 </head>
 
 <body>
@@ -58,7 +57,7 @@ session_start();
             ?>
                 <li class="usuario">
                     <img src="../../../img/fotosPerfil/<?php echo $l['foto']; ?>">
-                    <h1 class="product-text"><?php echo $l['usuario']; ?></h1>
+                    <h4 class="product-text"><?php echo $l['usuario']; ?></h4>
                     <p class="product-text">Email: <?php echo $l['email']; ?> </p>
                     <form method="POST">
                         <button class="btnConversa" name="btnConversa" type="submit" value="<?php echo $l['usuario']; ?>"> Bate-Papo </button>
