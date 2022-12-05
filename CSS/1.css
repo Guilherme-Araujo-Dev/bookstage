@@ -63,14 +63,17 @@ main{
     background-color: rgba(0,0,0,0.9);
     top: 0;
     left: 0;
+    font-style: normal;
 }
-.btn{
+.btn1{
     font-size: 1.5em;
     float: right;
     cursor: pointer;
     margin: 2% 3% 0 0;
     width: 60px;
     height: 56px;
+    color: white;
+    
 }
 
 .menu ul {

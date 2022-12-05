@@ -33,11 +33,3 @@ $livros = $stmt->fetchAll();
     ?>
 </body>
 </html>
-Conexao:
-<?php
-
-function conectar()  {
-    $pdo = new PDO('mysql:host=;dbname=BookStage', 'root', '');
-
-    return $pdo;
-};

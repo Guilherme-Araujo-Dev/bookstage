@@ -17,7 +17,8 @@ session_start();
 </head>
 
 <body>
-    <?php include("../Class/header.php") ?>
+    <?php include("../Class/header.php");
+    /*
     <main>
         <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-inner">
@@ -41,7 +42,8 @@ session_start();
             </button>
         </div>
     </main>
-    <?php include("../Class/footer.php"); ?>
+    */
+    include("../Class/footer.php"); ?>
 </body>
 
 </html>

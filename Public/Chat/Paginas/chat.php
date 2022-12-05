@@ -1,6 +1,7 @@
 <?php
 include_once("../../Class/conexao.php");
 $conn = conectar();
+session_start();
 ?>
 <!DOCTYPE html>
 <html>
@@ -11,6 +12,8 @@ $conn = conectar();
     <link rel="stylesheet" href="../../../CSS/1.css">
     <link rel="icon" href="../../../IMG/imag/logo.jpg">
     <link rel="stylesheet" href="../CSS/style.css">
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
 </head>
 
 <body>
@@ -33,9 +36,8 @@ $conn = conectar();
                 </div>
             </form>
             <?php
-            include_once("../settings/settings.php");
             if (!isset($_SESSION['idusuario'])) {
-                header("Location: ../../login.php");
+                echo "<meta http-equiv='refresh' content='0; URL=../../Funcoes/login.php'/>";
             }
 
             if (isset($_POST['env']) && $_POST['env'] == "envMsg") {
@@ -76,14 +78,7 @@ $conn = conectar();
 
     <?php include("../../Class/footer-chat.php") ?>
 
-    <script>
-        $(".bmenu").click(function() {
-            $(".menu").show();
-        });
-        $(".btn").click(function() {
-            $(".menu").hide();
-        });
-    </script>
+    <script src="../../../JS/button.js"></script>
 
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.js"></script>
 </body>

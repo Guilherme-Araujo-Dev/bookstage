@@ -84,14 +84,7 @@ $conn = conectar();
         </div>
     </footer>
     <script src="http://code.jquery.com/jquery-1.12.0.min.js"></script>
-    <script>
-        $(".bmenu").click(function() {
-            $(".menu").show();
-        });
-        $(".btn").click(function() {
-            $(".menu").hide();
-        });
-    </script>
+    <script src="../../../JS/button.js"></script>
 </body>
 
 </html>
