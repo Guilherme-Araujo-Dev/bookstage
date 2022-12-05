@@ -10,7 +10,7 @@
         <img src="../../IMG/imag/menu.png">
     </button>
     <nav class="menu">
-        <a class="btn"><h1>X</h1></a>
+        <a class="btn"><h4>X</h4></a>
         <ul>
             <li><a href="../index.php">In&iacute;cio</a></li>
             <li class="li"><a href="#">Gen&ecirc;ro:
