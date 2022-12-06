@@ -11,7 +11,7 @@
     </button>
     <nav class="menu">
         <a class="btn1">
-            <h4 style="font-style: normal">X</h4>
+            <h6 style="font-style: normal">X</h6>
         </a>
         <ul>
             <li><a href="../../Public/Home/index.php">In&iacute;cio</a></li>
