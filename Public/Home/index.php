@@ -14,22 +14,29 @@ session_start();
     <link rel="stylesheet" href="../../CSS/1.css">
     <link rel="stylesheet" href="../../CSS/2.css">
     <link rel="icon" href="../../IMG/imag/logo.jpg">
+    <script src="../../JS/button.js"></script>
 </head>
 
 <body>
-    <?php include("../Class/header.php");
-    /*
+    <?php include("../Class/header.php"); ?>
     <main>
         <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-inner">
                 <div class="carousel-item active">
-                    <img src="../../IMG/teste1.jpg" class="d-block w-100" alt="teste">
+                    <a href="../Livros/base.php?id=1">
+                        <img src="../../IMG/livros/acidadedosfantasmas.jpg" class="carrosel" alt="teste">
+                    </a>
                 </div>
                 <div class="carousel-item">
-                    <img src="../../IMG/teste2.jpg" class="d-block w-100" alt="teste">
+                    <a href="../Livros/base.php?id=21">
+                        <img src="../../IMG/livros/oladraoderaios.jpg" class="carrosel" alt="teste">
+                    </a>
                 </div>
                 <div class="carousel-item">
-                    <img src="../../IMG/teste3.jpg" class="d-block w-100" alt="teste">
+                <a href="../Livros/base.php?id=2">
+                <img src="../../IMG/livros/aculpaedasestrelas.jpg" class="carrosel" alt="teste">
+                    </a>
+                    
                 </div>
             </div>
             <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
@@ -42,8 +49,8 @@ session_start();
             </button>
         </div>
     </main>
-    */
-    include("../Class/footer.php"); ?>
+    <?php include("../Class/footer.php") ?>
+    <script src="http://code.jquery.com/jquery-1.12.0.min.js"></script>
     <script src="../../JS/button.js"></script>
 </body>
 

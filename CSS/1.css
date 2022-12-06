@@ -196,6 +196,12 @@ select {
     color: #ffffff;
 }
 
+.carrosel {
+    max-height: 590px;
+    max-width: 100%;
+    width: 100%;
+}
+
 /*RODAPE*/
 
 html {
