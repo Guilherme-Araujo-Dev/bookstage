@@ -72,5 +72,5 @@
 </html>
 
 <?php
-include("Class/leitores.php");
+include("../Class/leitores.php");
 ?>

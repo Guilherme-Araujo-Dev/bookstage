@@ -131,4 +131,4 @@ nenhuma chance de dar certo. Ou tem? Vermelho, branco e sangue azul é escandalo
 INSERT INTO leitores (nome, usuario, data_nasc, telefone, email, senha, sexo) VALUES ("Juliany Fites dos Santos", "Jubaba", "2004-04-18", "45998369261", "santos.juliany@escola.pr.gov.br", md5("12345678"), "F");
 INSERT INTO leitores (nome, usuario, data_nasc, telefone, email, senha, sexo) VALUES ("Mariana Balem Fonseca", "Merlin", "2004-01-04", "45984028366", "mariana.fonseca@escola.pr.gov.br", md5("87654321"), "O");
 INSERT INTO leitores (nome, usuario, data_nasc, telefone, email, senha, sexo) VALUES ("Guilherme Araújo Pereira", "Aleatorio", "2004-04-18", "45998305347", "guilherme.araujo.pereira@escola.pr.gov.br", md5("batata123"), "M");
-INSERT INTO leitores (nome, usuario, data_nasc, telefone, email, senha, sexo) VALUES ("Angelica Celeste Del Pozo Pescador", "Angel", "2004-06-17", "45998312296", "angelica.pescador@escola.pr.gov.br", md5("********"), "F");
+-- INSERT INTO leitores (nome, usuario, data_nasc, telefone, email, senha, sexo) VALUES ("Angelica Celeste Del Pozo Pescador", "Angel", "2004-06-17", "45998312296", "angelica.pescador@escola.pr.gov.br", md5("********"), "F");
