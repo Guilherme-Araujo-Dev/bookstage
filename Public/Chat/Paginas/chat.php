@@ -76,7 +76,6 @@ session_start();
 
 
 
-    <?php include("../../Class/footer-chat.php") ?>
 
     <script src="../../../JS/button.js"></script>
 
